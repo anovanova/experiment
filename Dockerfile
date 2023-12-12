@@ -8,8 +8,4 @@ RUN npm install
 
 COPY . .
 
-ENV PORT=12807
-
-EXPOSE 12807
-
-CMD [ "npm", "run start"]
+CMD [ "npm", "dev"]
