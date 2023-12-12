@@ -16,4 +16,4 @@ EXPOSE 12807
 
 RUN npm run build
 
-CMD [ "http-serve", "dist"]
+CMD [ "http-server", "dist"]
