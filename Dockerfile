@@ -12,4 +12,4 @@ ENV PORT=12807
 
 EXPOSE 12807
 
-CMD [ "npm", "build"]
+CMD [ "npm", "run start"]
