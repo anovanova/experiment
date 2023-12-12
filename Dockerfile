@@ -1,4 +1,6 @@
-FROM node:18
+FROM node:lts-alpine
+
+RUN npm install -g http-server
 
 WORKDIR /app
 
@@ -8,4 +10,10 @@ RUN npm install
 
 COPY . .
 
-CMD [ "npm", "run dev"]
+ENV PORT=12807
+
+EXPOSE 12807
+
+RUN npm run build
+
+CMD [ "http-serve", "dist"]
