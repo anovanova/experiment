@@ -14,7 +14,7 @@ const format = (date: { getDate: () => any; getMonth: () => number; getFullYear:
 
 <template>
   <main>
-    <h1>PEPSI IS MY DRINK</h1>
+    <h1>WALA AKONG ALAM</h1>
     <VueDatePicker v-model="date" :format="format"/>
     <input type="date" name="" id="">
     <TheWelcome />
